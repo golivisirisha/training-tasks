@@ -6,12 +6,30 @@
         <p id="demo"></p>
 
         <script>
+
+            //if else conditions
             let age=18;
+            let text;
             if(age>=18){
-                document.getElementById("demo").innerHTML="eligible for vote";
+                text="eligible for vote";
             }else{
-                document.getElementById("demo1").innerHTML="not eligible for vote";
+                text="not eligible for vote";
             }
+            document.getElementById("demo").innerHTML=text;
+
+            // using else if 
+            let num=15;
+            let txt;
+            if(num>10){
+                txt="number is greater than 10";
+            }else if(num===10){
+                txt="number is equal to 10";
+            }else{
+                txt="number is less than 10";
+            }
+            document.getElementById("demo1").innerHTML=txt;
+
+            let 
         </script>
     </body>
 </html>
