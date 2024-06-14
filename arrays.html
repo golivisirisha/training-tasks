@@ -20,6 +20,8 @@
 <p id="demo13"></p>
 <p id="demo14"></p> 
 <p id="loop"></p>
+<p id="backward"></p>
+
 <h1>functions</h1>
 <p id="demo15"></p>
 <p id="demo16"></p>
@@ -124,6 +126,17 @@ for (let i=0;i < details.length;i++){
 
 }
 document.getElementById("loop").innerHTML=output +"<br>"+types;
+
+
+//for loop iterate over the backward of array
+let backward="";
+
+for(let i=details.length-1;i>=0;i--){
+    backward+=details[i]+" "+i+"<br>";
+
+}
+
+document.getElementById("backward").innerHTML=`iterate over the array in backward direction ${backward}`;
 
 //functions
 //function declaration
