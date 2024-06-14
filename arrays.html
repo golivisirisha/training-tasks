@@ -19,8 +19,7 @@
 <p id="demo12"></p>
 <p id="demo13"></p>
 <p id="demo14"></p> 
-
-
+<p id="loop"></p>
 <h1>functions</h1>
 <p id="demo15"></p>
 <p id="demo16"></p>
@@ -115,6 +114,15 @@ function myfunction4(value){
 }
 document.getElementById("demo14").innerHTML=numbers3;
 
+//for loop iterate over the array
+let details=["siri","student",2024-2003,["siri","bhavi","vasu"],true]; //here we have stored different data types in the array
+let output="";
+for (let i=0;i < details.length;i++){
+    output+=details[i] +" "+typeof(details[i])+"<br>";
+
+}
+document.getElementById("loop").innerHTML=output;
+
 //functions
 //function declaration
 
@@ -136,7 +144,6 @@ document.getElementById("demo16").innerHTML="anonomous functions "+values;
 let arrow1=(x,y)=>x+y;
 let values1=arrow1(4,7);
 document.getElementById("demo17").innerHTML="arrow functions "+values1;
-
 
 
 
