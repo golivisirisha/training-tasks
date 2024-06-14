@@ -2,9 +2,16 @@
 <html>
     <body>
         <h1>conditions</h1>
+        <p id="demo1"></p>
+        <p id="demo"></p>
 
         <script>
-            let 
+            let age=18;
+            if(age>=18){
+                document.getElementById("demo").innerHTML="eligible for vote";
+            }else{
+                document.getElementById("demo1").innerHTML="not eligible for vote";
+            }
         </script>
     </body>
 </html>
